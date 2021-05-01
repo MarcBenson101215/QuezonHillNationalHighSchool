@@ -1,0 +1,209 @@
+<html>
+    <head>    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="DollosaHomepageCss.css">
+        <title>
+            Quezon Hill National High School
+        </title>
+        <style>
+          * {box-sizing: border-box;}
+          body {font-family: Verdana, sans-serif;}
+          .mySlides {display: none;}
+          img {vertical-align: middle;}
+          
+          
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+          
+          
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          
+         
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+       
+          .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active {
+            background-color: #717171;
+          }
+          
+         
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+
+          @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+          }
+          
+           @media only screen and (max-width: 360px) {
+            .text {font-size: 11px}
+            .Schoolname{
+              float: left;
+              width: 100%;
+            }
+            .nav {
+              float: left;
+              width: 100%;
+            }
+            .saying{
+              float: left;
+              width: 100%;
+            }
+        *div {
+          float: left;
+              width: 100%;
+        }
+          
+          }
+       
+          </style>
+    </head>
+    <a name="top"></a>
+    <body id="body">
+        <header id="Schoolname">
+          <table width="100%" cellspacing="5px">
+            <tr>
+              <td> <img id="Image1" id="SchoolLogo" src="SchoolImages/QHNHSLOGO.jpg" alt="SchoolLogo"></td></td>
+              <td><p id="Text1">QUEZON HILL NATIONAL HIGH SCHOOL</p>
+                <P id="Text1">Lamug Street, Middle Quezon Hill</P></td>
+                <td align="left">
+                  <i class="material-icons">facebook</i><b>@DepEdTayoQuezonHillNHS</b> <br>
+<i class="material-icons">telephone</i><b>(074) 442 1821
+                </td>
+            </tr>
+          </table>
+        </header>
+        <nav>
+            <li><a href="DollosaHomepage.html"><b>Home</b></a></li>
+            <li><a href="DollosaAbout.html" ><b>About</b></a></li>
+            <li><a href="DollosaSports.html"><b>Sports</b></a></li>
+            <li><a href="DollosaMap.html"><b>Map</b></a></li>
+            <li><a href="DollosaContactUs.html"><b>Contact Us</b></a></li>
+        </nav>
+        <marquee id="saying"> <i><b>"Kabataang mula sa K to 12, Tagapagdala ng Kaunlaran sa Bansang Pilipinas"</b></i></marquee>
+        <div class="slideshow-container">
+          <div>
+            <h1 style="margin-left: 30px; text-align: center;">Sports</h1>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray;">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="SchoolImages/Team.jpg" style="width:100%; height: 80%;">
+            <div class="text">Team</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="SchoolImages/basketball.jpg" style="width:100%; height: 80%;">
+            <div class="text">basketball</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="SchoolImages/volleyball.jpg" style="width:100%; height: 80%;">
+            <div class="text">volleyball</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="SchoolImages/run.jpg" style="width:100%; height: 80%;">
+            <div class="text">Run</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="SchoolImages/Field.jpg" style="width:100%; height: 80%;">
+            <div class="text">Field</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); 
+          }
+          </script>
+         <footer>
+          <table width="100%">
+            <tr>
+              <td >
+            <pre style="text-align: center;" id="Foot">High School Education
+Grade 7-10
+            </pre></td>
+            <td>
+          <pre style="text-align: center;" id="Foot"> <b>School Address</b>
+Lamug Street, Middle Quezon Hill Baguio City, Philippines</pre>
+            </td>
+          </tr>
+          </table>
+          <a href="#top">Back to Top</a>
+        </footer>
+       
+
+    </body>
+</html>

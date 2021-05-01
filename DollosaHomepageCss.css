@@ -1,0 +1,155 @@
+#body {
+    overflow: auto;
+    background-color:papayawhip;
+    overflow: auto;
+}
+#Schoolname {
+background-color:inherit;
+width:98%;
+margin-bottom: 0px;
+overflow: auto;
+}
+#Image1 {
+width: 150px;
+max-height: 100%;
+border-radius: 8px;
+
+
+}
+#Text1 {
+text-align: center;
+letter-spacing: 10px;
+font-size: 23px;
+text-shadow: 2px 2px 8px coral;
+}
+
+
+#BulletinBoard {
+float: left;
+background-color: inherit;
+width: 60%;
+height: 68%;
+border: 5px inherit;
+margin-top: 25px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 50px;
+overflow: auto;
+
+}
+#BulImage {
+width: 800px;
+height: 380px;
+border-radius: 28px;
+}
+#Vision {
+float: left;
+background-color:inherit;
+width: 30%;
+height: 30%;
+border: 5px solid orange;
+margin: auto;
+margin-top: 25px;
+margin-bottom: 5px;
+margin-left: 5px;
+border-radius: 5px;
+overflow: auto;
+
+}
+#NewNormal {
+float: left;
+background-color: inherit;
+width: 99%;
+height: 65%;
+border: 5px solid inherit;
+margin-top: 25px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 50px;
+overflow: auto;
+
+}
+#NewnormalImage{
+width: 1300px;
+height: 395px;
+border-radius: 10px;
+}
+#Mission {
+float: left;
+background-color: inherit;
+width: 30%;
+height: 30%;
+border: 5px solid grey;
+margin: auto;
+margin-top: 25px;
+margin-bottom: 5px;
+margin-left: 5px;
+border-radius: 5PX;
+overflow: auto;
+}
+
+footer {
+background-color:whitesmoke;
+width: 99%;
+height: 23%;
+border-top: 5px solid black;
+margin-top: 25px; 
+margin-right: 10px;
+margin-left: 10px;
+overflow: auto;
+text-shadow: 2px 2px 8px coral;
+font-family: Georgia;
+}
+
+#saying {
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    background:coral;
+    border-radius: 20px;   
+}
+nav {
+list-style-type: none;
+margin: 0;
+margin-bottom: 3px;
+padding: 0;
+overflow: hidden;
+background-color:lightsalmon;
+float: inline-start;
+width: 100%;
+overflow: auto;
+border-radius: 10px;
+}
+
+ nav li {
+float: left;
+color: black;
+text-decoration: none;
+font-size: 17px;
+width: 20%;
+text-align: center;
+font-family: sans-serif;
+}
+
+nav a {
+display: block;
+color: black;
+text-align: center;
+padding: 7px 8px;
+text-decoration: none;
+border-right: 2px solid lightslategray;
+}
+
+nav a:hover {
+background-color:lightslategray;
+border-bottom: 1px solid black;
+}
+#pre1 {
+text-align: center;
+font-family: Georgia;
+}
+#Foot {
+font-family: Georgia;
+text-align: left;
+}
+ 
